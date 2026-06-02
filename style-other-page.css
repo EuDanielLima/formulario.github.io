@@ -1,0 +1,9 @@
+body {
+    background: rgb(226, 125, 125);
+    text-align: center;
+    font: normal 15pt Arial;
+}
+
+div#title {
+    font: normal 30pt Arial;
+}

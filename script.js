@@ -1,6 +1,3 @@
-
-
-
 const list = []
 function salvar (attribute) {
     if (attribute.checked){
@@ -17,14 +14,13 @@ const anoAni = 2024
 let mes = mesAtual - mesAni
 let ano = (anoAtual - anoAni) * 12
 let mesTotal = mes + ano
-function salvarTypeNun () {
+
+
+function nota () {
     let p4 = window.document.getElementById('p4').value
     if (p4 == mesTotal) {
         list.push(p4)
     }
-
-}
-function respostas () {
     let r = window.document.getElementById('r')
     r.innerHTML = ''
     r.innerHTML = `<strong>Respostas corretas: </strong>`
@@ -55,25 +51,25 @@ function respostas () {
         div.appendChild(p3)
        
     }
-    if (cont2 == 4) {
+    else if (cont2 == 4) {
         let p3 = window.document.createElement('p')
         p3.textContent = 'Recuperação!!!'
         div.appendChild(p3)
     }
         
-    if (cont2 == 6) {
+    else if (cont2 == 6) {
         let p3 = window.document.createElement('p')
         p3.textContent = 'Nada mal...'
         div.appendChild(p3)
     }
         
-    if (cont2 == 8) {
+    else if (cont2 == 8) {
         let p3 = window.document.createElement('p')
         p3.textContent = 'Essa foi por pouco!'
         div.appendChild(p3)
         
     }
-    if (cont2 == 10) {
+    else if (cont2 == 10) {
         let p3 = window.document.createElement('p')
         p3.textContent = 'Você me ama : )'
         div.appendChild(p3)

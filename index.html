@@ -20,42 +20,38 @@
                 <label for="p1a">Madero</label><br>
                 <input type="radio" name="p1" id="p1b" value="Chroma Burguer">
                 <label for="p1b">Chroma Burguer</label><br>
-                <input type="radio" name="p1" id="p1c" value="Sua Casa">
+                <input type="radio" name="p1" id="p1c" value="Sua Casa" onclick="salvar(
+                window.document.querySelector('input#p1c')
+                )">
                 <label for="p1c">Sua casa</label><br>
                 <input type="radio" name="p1" id="p1d" value="Coco Bambu">
                 <label for="p1d">Coco Bambu</label><br>
             </div>
-            <div id="button1">
-    
-                <input type="button" value="Salvar resposta..." onclick="salvar(
-                window.document.getElementById('p1c'))">
-            </div>    
+            
+            
         </form>
         <form>
             <div>
                 <img src="WhatsApp-Image-2026-05-21-at-17.png" alt="Imagem de gatinho">
                 <legend>É você na imagem?</legend>
-                <input type="radio" name="p2" id="p2a" value="Sim" checked>
+                <input type="radio" name="p2" id="p2a" value="Sim" onclick="salvar(
+                window.document.querySelector('input#p2a')
+                )">
                 <label for="p2a">Sim</label>
                 <input type="radio" name="p2" id="p2b" value="Não">
                 <label for="p2b">Não</label><br>
             </div>
-            <div>
-                <input type="button" value="Salvar resposta..." onclick="salvar(
-                window.document.getElementById('p2a'))">
-            </div>
+
         </form>
         <form>
             <div>
                 <p>Você me ama?(Tô carente...)</p>
-                <input type="radio" name="p3" id="p3a" value="Sim" checked>
+                <input type="radio" name="p3" id="p3a" value="Sim" onclick="salvar(
+                window.document.querySelector('input#p3a')
+                )">
                 <label for="p3a">Sim</label>
                 <input type="radio" name="p3" id="p3b" value="Não">
                 <label for="p3b">Não</label><br>
-            </div>
-            <div>
-                <input type="button" value="Salvar resposta..." onclick="salvar(
-                window.document.getElementById('p3a'))">
             </div>
         </form>
         <form>
@@ -64,9 +60,7 @@
                 respondendo)</p>
                 <input type="number" name="p4" id="p4">
             </div>
-            <div>
-                <input type="button" value="Salvar resposta..." onclick="salvarTypeNun()">
-            </div>
+    
         </form>
         <form>
             <div>
@@ -75,20 +69,18 @@
                 <label for="p5a">Raquel</label><br>
                 <input type="radio" name="p5" id="p5b" value="Gabriela">
                 <label for="p5b">Gabriela</label><br>
-                <input type="radio" name="p5" id="p5c" value="Diana">
+                <input type="radio" name="p5" id="p5c" value="Diana" onclick="salvar(
+                window.document.querySelector('input#p5c')
+                )">
                 <label for="p5c">Diana</label><br>
                 <input type="radio" name="p5" id="p5d" value="Adriana">
                 <label for="p5d">Adriana</label>
-            </div>
-            <div>
-                <input type="button" value="Salvar resposta..." onclick="salvar(
-                window.document.getElementById('p5c'))">
             </div>
         </form>
         <div id="r">
             Respostas e notas aqui... (Só irão aparecer quando terminar o formulário)
             Clique aqui &RightArrow;
-            <input type="button" value="Ver respostas..." onclick="respostas()">
+            <input type="button" value="Ver sua nota..." onclick="nota()">
         </div>
         <div id="n"></div>
     </section>
